@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity
 {
 
     int quantity = 1;
-    Toast Toast;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -108,11 +108,11 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void showAToast (String message){
-        if (Toast != null) {
-            Toast.cancel();
+        if (toast != null) {
+            toast.cancel();
         }
-        Toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
-        Toast.show();
+        toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     /**
