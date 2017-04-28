@@ -10,8 +10,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.NumberFormat;
-
 /**
  * This app displays an order form to order coffee.
  */
@@ -44,7 +42,6 @@ public class MainActivity extends AppCompatActivity
 
         int price = calculatePrice(hasGoodStuff, hasBadStuff);
         String priceMessage = createOrderSummary(name, price, hasGoodStuff, hasBadStuff);
-        //displayMessage(priceMessage);
 
         String addresses[] = {"faraday", "jekyll"};
         composeEmail(addresses, "Subject", priceMessage);
